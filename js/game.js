@@ -106,11 +106,7 @@ class Game{ //A ATIVIDADE NESSE ARQUIVO É NA LINHA 109, 130 E 159. É NECESSÁR
                      
                  }
                  if(frameCount % 40 === 0){
-                    //chame addObstacles()
-                     //on.addObstacles();
-                     //this.addObstacles();
-                     //set.addObstacles();
-                     //this.addobstacles();
+                  on.addObstacles();
                  }
                  
                   if (player.index !== null) {
@@ -128,10 +124,8 @@ class Game{ //A ATIVIDADE NESSE ARQUIVO É NA LINHA 109, 130 E 159. É NECESSÁR
 
                       if(obstacleGroup.isTouching(players)){
                        //escolha o código para atribuir o valor de gameState a End (fim)
-                          //gameState = 0;
-                          //gameState = 1;
-                          //gameState = 2;
-                          //gameState = 3;
+                          gameState = 0;
+                 
                       }
                   }
                 }
@@ -157,11 +151,7 @@ class Game{ //A ATIVIDADE NESSE ARQUIVO É NA LINHA 109, 130 E 159. É NECESSÁR
     {       
             var x, y;
             //escolha o código para criar um obstáculo na posição x aleatória.
-            //x = random(0, width-100);
-            //x,y = random(0, width-100);
-            //y = random(0, width-100);
-            //y,x = random(0, width-100);
-            y = 0
+            x = random(0, width-100);
             var obstacle = createSprite(x, y);
             obstacle.addImage("obstacle", obstacleImage);
             obstacle.velocityY = 4;
